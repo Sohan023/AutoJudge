@@ -1,23 +1,42 @@
-# AutoJudge: CP Difficulty Predictor 🧠
+# AutoJudge: Hybrid NLP Difficulty Estimator 🧠⚡
 
-**AutoJudge** is a machine learning system designed to predict the difficulty rating (800-3500) of Codeforces problems based on their metadata. This project automates the feature extraction process and helps categorize problems for targeted practice.
+**AutoJudge** is an intelligent difficulty prediction system for competitive programming problems. Unlike standard classifiers, it employs a **Hybrid Architecture** that combines Machine Learning (Random Forest + TF-IDF) with **Rule-Based Heuristics** to achieve high accuracy in categorizing problems as *Easy*, *Medium*, or *Hard*.
 
-## 🚀 Features
-* **Automated Scraper:** Fetches 10,000+ problems from the Codeforces API.
-* **Smart Feature Extraction:** Parses problem tags, acceptance rates, and time limits.
-* **Predictive Modeling:** Uses Random Forest to estimate problem ratings with high accuracy.
+
+
+[Image of machine learning pipeline diagram]
+
+
+## 🚀 Key Features
+* **Dual-Model Engine:**
+  * **Classifier:** `RandomForestClassifier` (n=800) for categorical difficulty (Easy/Med/Hard).
+  * **Regressor:** `GradientBoostingRegressor` for precise difficulty scoring (1-10 scale).
+* **NLP Feature Engineering:** Extracts **TF-IDF n-grams** combined with custom features like "Math Symbol Density" and "Algorithmic Keyword Frequency" (e.g., detecting 'dp', 'segment tree').
+* **Hybrid Stratification:** A post-processing layer that uses **Expert Rules** to correct model biases (e.g., forcing 'Hard' classification if 'FFT' or 'Bitmask' is detected).
+* **Modern UI:** A fully responsive **Streamlit** web application with a custom Glassmorphism dark theme.
 
 ## 🛠️ Tech Stack
-* **Language:** Python 3.10
-* **Libraries:** Scikit-Learn, Pandas, NumPy, Matplotlib
-* **Tools:** Git, Jupyter Notebook
+* **Frontend:** Streamlit (Python), Custom CSS
+* **NLP & ML:** Scikit-Learn (TF-IDF, Random Forest, Gradient Boosting), NumPy, Pandas
+* **Persistence:** Joblib for model serialization
 
-## 📊 Project Structure
-/src          # Data scraping and preprocessing scripts
-/models       # Trained ML models (.pkl)
-/notebooks    # Exploratory Data Analysis (EDA)
-
-## ⚡ Usage
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/Sohan023/AutoJudge.git](https://github.com/Sohan023/AutoJudge.git)
+## 📊 System Architecture
+```text
+Input (Problem Text) 
+   │
+   ├──> [TF-IDF Vectorizer] ──> Sparse Matrix
+   │
+   ├──> [Feature Extractor] ──> (Len, Math_Symbols, Keyword_Count)
+   │
+   ▼
+[Merged Feature Vector]
+   │
+   ├──> [Random Forest Classifier] ──> Raw Class (0,1,2)
+   │
+   ├──> [Gradient Boosting Regressor] ──> Raw Score
+   │
+   ▼
+[Rule-Based Stratification Layer] <── (Overrides edge cases)
+   │
+   ▼
+Final Output: "Hard" (Score: 8.5/10)
