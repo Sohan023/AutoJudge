@@ -7,10 +7,6 @@ venv/
 __pycache__/
 *.pyc
 
-# Model artifacts
-*.pkl
-*.joblib
-
 # OS files
 .DS_Store
 Thumbs.db
