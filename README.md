@@ -126,7 +126,7 @@ The interface runs locally and does not require deployment or hosting.
 A short demo video demonstrating the project overview, model approach, and working web interface is provided.
 
 🔗 **Demo video link:**  
-- `https://drive.google.com/file/d/1q0tIbh5PvjV9E9rMUQNZPYgly-bdopvO/view?usp=sharing`
+- https://drive.google.com/file/d/1q0tIbh5PvjV9E9rMUQNZPYgly-bdopvO/view?usp=sharing
 
 ---
 ## 📄 Project Report
@@ -134,7 +134,7 @@ A short demo video demonstrating the project overview, model approach, and worki
 A detailed project report (PDF) describing the problem statement, dataset, preprocessing steps, feature engineering techniques, model design, experimental setup, evaluation metrics (accuracy, confusion matrix, MAE, RMSE), web interface, and sample predictions is provided below.
 
 Project Report (PDF):
-`https://drive.google.com/file/d/1GZpRHHj01orli5JA1Jb6ozuVJi2MtZwH/view?usp=sharing`
+https://drive.google.com/file/d/1GZpRHHj01orli5JA1Jb6ozuVJi2MtZwH/view?usp=sharing
 
 The report corresponds directly to the submitted codebase and includes screenshots of outputs and the web interface.
 
