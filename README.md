@@ -125,7 +125,16 @@ A short demo video demonstrating the project overview, model approach, and worki
 - ADD DEMO VIDEO LINK HERE
 
 ---
+## 📄 Project Report
 
+A detailed project report (PDF) describing the problem statement, dataset, preprocessing steps, feature engineering techniques, model design, experimental setup, evaluation metrics (accuracy, confusion matrix, MAE, RMSE), web interface, and sample predictions is provided below.
+
+Project Report (PDF):
+https://drive.google.com/file/d/1GZpRHHj01orli5JA1Jb6ozuVJi2MtZwH/view?usp=sharing
+
+The report corresponds directly to the submitted codebase and includes screenshots of outputs and the web interface.
+
+---
 ## 👤 Author
 
 **Darabala Sohan Mahendra**  
