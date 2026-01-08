@@ -1,6 +1,6 @@
 # AutoJudge – Programming Task Difficulty Estimation
 
-AutoJudge is a machine learning based system designed to estimate the difficulty of competitive programming tasks using their problem statements. Given a task description as input, the system predicts:
+AutoJudge is a machine learning-based system designed to estimate the difficulty of competitive programming tasks using their problem statements. Given a task description as input, the system predicts:
 - 🏷️ A **categorical difficulty level**: Easy / Medium / Hard  
 - 📊 A **numerical difficulty score**
 
@@ -112,8 +112,10 @@ The interface runs locally and does not require deployment or hosting.
    - `python src/train.py`
 6. Start the web application:
    - `streamlit run app.py`
-7. Open the application in the browser at:(The application will open automatically in the default browser at http://localhost:8501. If it does not open automatically, the URL can be accessed manually.)
+7. The application will open automatically in the default browser at:
    - `http://localhost:8501`
+   If it does not open automatically, the URL can be accessed manually.
+
 
 ---
 
