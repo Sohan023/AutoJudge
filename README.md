@@ -100,12 +100,14 @@ The interface runs locally and does not require deployment or hosting.
 
 ## ▶️ Steps to Run the Project Locally
 
-1. Clone the repository and navigate to the project directory  
+1. Clone the repository and navigate to the project directory:
+   - `git clone https://github.com/Sohan023/AutoJudge.git`
+   - `cd AutoJudge`
 2. Create a virtual environment using:
    - `python -m venv venv`
 3. Activate the virtual environment (platform-specific)
 4. Install required libraries:
-   - `pip install streamlit pandas numpy scikit-learn joblib`
+   - `python -m pip install streamlit pandas numpy scikit-learn joblib`
 5. (Optional) Run the full machine learning pipeline:
    - `python src/preprocess.py`
    - `python src/features.py`
@@ -124,7 +126,7 @@ The interface runs locally and does not require deployment or hosting.
 A short demo video demonstrating the project overview, model approach, and working web interface is provided.
 
 🔗 **Demo video link:**  
-- ADD DEMO VIDEO LINK HERE
+- `https://drive.google.com/file/d/1q0tIbh5PvjV9E9rMUQNZPYgly-bdopvO/view?usp=sharing`
 
 ---
 ## 📄 Project Report
@@ -132,7 +134,7 @@ A short demo video demonstrating the project overview, model approach, and worki
 A detailed project report (PDF) describing the problem statement, dataset, preprocessing steps, feature engineering techniques, model design, experimental setup, evaluation metrics (accuracy, confusion matrix, MAE, RMSE), web interface, and sample predictions is provided below.
 
 Project Report (PDF):
-https://drive.google.com/file/d/1GZpRHHj01orli5JA1Jb6ozuVJi2MtZwH/view?usp=sharing
+`https://drive.google.com/file/d/1GZpRHHj01orli5JA1Jb6ozuVJi2MtZwH/view?usp=sharing`
 
 The report corresponds directly to the submitted codebase and includes screenshots of outputs and the web interface.
 
